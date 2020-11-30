@@ -8,6 +8,6 @@ class EnvironmentTest extends TestCase
 {
     public function testPHPUnitIsSetUpRight(): void
     {
-        self::assertTrue(defined('UNIT_TESTS_IN_PROGRESS'));
+        self::assertFalse(defined('UNIT_TESTS_IN_PROGRESS'));
     }
 }
