@@ -1,6 +1,6 @@
 # My smart-home server
 
-REST API for collecting data from sensors, installed on NodeMCU (ESP8266) device.
+REST API for collecting data from some sensors, installed with NodeMCU (ESP8266) device.
 
 # What is this?
 
