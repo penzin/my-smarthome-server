@@ -1,8 +1,6 @@
 <?php
 
-namespace tests\integration;
-
-use penzin\MySmarthomeServer\Api\Test\ApplicationTestCase;
+namespace Penzin\MySmartHomeServer;
 
 class ApplicationTest extends ApplicationTestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace tests\integration;
+namespace Penzin\MySmartHomeServer;
 
 use PHPUnit\Framework\TestCase;
 
-class EnvironmentTest extends TestCase
+class EnvironmentIntegrationTest extends TestCase
 {
     public function testPHPUnitIsSetUpRight(): void
     {

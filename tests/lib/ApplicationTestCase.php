@@ -1,8 +1,7 @@
 <?php
 
-namespace penzin\MySmarthomeServer\Api\Test;
+namespace Penzin\MySmartHomeServer;
 
-use penzin\MySmarthomeServer\Api\Application;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Slim\Psr7\Factory\StreamFactory;
@@ -48,7 +47,7 @@ abstract class ApplicationTestCase extends TestCase
     ): Request {
         $uri = new Uri('', '', 80, $path, $query);
 
-        $handle = fopen('php://temp', 'w+');
+        $handle = fopen('php://temp', 'wb+');
         $stream = (new StreamFactory())->createStreamFromResource($handle);
 
         $h = new Headers();

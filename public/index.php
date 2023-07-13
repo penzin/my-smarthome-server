@@ -1,6 +1,6 @@
 <?php
 
-use penzin\MySmarthomeServer\Api\Application;
+use Penzin\MySmartHomeServer\Application;
 
 require __DIR__ . '/../vendor/autoload.php';
 (new Application())->run();

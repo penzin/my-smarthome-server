@@ -1,6 +1,6 @@
 <?php
 
-namespace penzin\MySmarthomeServer\Api;
+namespace Penzin\MySmartHomeServer;
 
 use Psr\Http\Message\ResponseInterface;
 use Slim\Psr7\Request;
