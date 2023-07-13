@@ -1,7 +1,8 @@
 <?php
 
-namespace Penzin\MySmartHomeServer;
+namespace Penzin\MySmartHomeServer\lib;
 
+use Penzin\MySmartHomeServer;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Slim\Psr7\Factory\StreamFactory;
@@ -12,14 +13,14 @@ use Slim\Psr7\Uri;
 abstract class ApplicationTestCase extends TestCase
 {
     /**
-     * @var Application
+     * @var MySmartHomeServer\Application
      */
     protected $application;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->application = new Application();
+        $this->application = new MySmartHomeServer\Application();
     }
 
     protected function tearDown(): void

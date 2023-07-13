@@ -1,6 +1,6 @@
 <?php
 
-namespace Penzin\MySmartHomeServer;
+namespace Penzin\MySmartHomeServer\integration;
 
 use PHPUnit\Framework\TestCase;
 

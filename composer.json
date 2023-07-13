@@ -24,7 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Penzin\\MySmarthomeServer\\": "src"
+            "Penzin\\MySmartHomeServer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Penzin\\MySmartHomeServer\\": "tests"
         }
     }
 }
