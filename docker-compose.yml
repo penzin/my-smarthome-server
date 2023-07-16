@@ -1,0 +1,27 @@
+services:
+  php-fpm:
+    container_name: php-fpm
+    build: docker/php
+    volumes:
+      - .:/var/www/my-smarthome-server
+    networks:
+      - docker-nt
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/my-smarthome-server
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+    links:
+      - php-fpm
+    depends_on:
+      - php-fpm
+    networks:
+      - docker-nt
+
+networks:
+  docker-nt:
+    driver: bridge
