@@ -31,5 +31,6 @@ RUN apt-get purge -y g++ \
 # install composer
 RUN curl https://getcomposer.org/composer.phar > /usr/local/bin/composer && chmod a+x /usr/local/bin/composer
 
+EXPOSE 9000
 WORKDIR "/var/www/my-smarthome-server"
 CMD ["php-fpm"]
