@@ -1,7 +1,7 @@
 #!/bin/bash
 dir=$(cd "$(dirname "$0")";pwd);
 
-cd ${dir}/unit
-php ../../vendor/bin/phpunit . &&
+cd ${dir}/unit &&
+./run.sh &&
 cd ${dir}/integration &&
-php ../../vendor/bin/phpunit .
+./run.sh
