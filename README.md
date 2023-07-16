@@ -13,8 +13,10 @@ Such an architecture provides persisting the data across some timeline. That's a
 
 # Development
 
-Clone this repo and run `composer install` to install all dependencies.
-For local debug run `composer start` command then open `http://localhost:8888/` location with your browser.
-To execute all tests run `./tests/run.sh`
-To execute unit tests only run `./tests/unit/run.sh`
-To execute integration tests only run `./tests/integration/run.sh`, obviously.
+- Clone this repo and run `composer install` to install all dependencies
+- For deploy and run locally the solution via docker-compose use `composer start` command. It will up two containers and solution will be available on `http://127.0.0.1:8080/`
+- To execute all tests run `composer tests`
+- To execute unit tests only run `composer unit-tests`
+- To execute integration tests only run `composer integration-tests`, obviously
+- To jump inside container run `composer cli`
+- To stop containers run `composer stop`
